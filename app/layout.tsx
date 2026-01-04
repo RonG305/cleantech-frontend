@@ -1,8 +1,16 @@
 import type { Metadata } from "next";
-import {  Inter } from "next/font/google";
+import { Fira_Sans, Inter } from "next/font/google";
 import "./globals.css";
+import QueryProvider from "@/providers/QueryProvider";
+import { Toaster } from "sonner";
 
-const inter = Inter({subsets:["latin"]})
+const firaSans = Fira_Sans({weight: ["400", "700"], subsets: ["latin"], variable: "--font-fira-sans"});
+const inter = Inter({subsets: ["latin", "greek"], variable: "--font-inter"});
+
+export const metadata: Metadata = {
+  title: "CleanTech",
+  description: "Multivendor SAAS platform for cleaning services",
+};
 
 export default function RootLayout({
   children,
@@ -14,7 +22,8 @@ export default function RootLayout({
       <body
         className={`${inter.className} antialiased`}
       >
-        {children}
+             <Toaster richColors position="top-right" closeButton />
+           <QueryProvider>{children}</QueryProvider>
       </body>
     </html>
   );
