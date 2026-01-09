@@ -340,7 +340,9 @@ export function HomepageNavigationMenu() {
 
   return (
     <div className=" min-h-19  container m-auto px-8 py-4 items-center flex ">
-      <h1 className="text-2x font-extrabold text-primary md:text-xl text-base border rounded-full border-2 border-primary p-1">SleekClean</h1>
+      <h1 className="text-2x font-extrabold text-primary md:text-xl text-base border rounded-full border-2 border-primary p-1">
+         <Icon icon="mdi:broom" fontSize={28} className="inline-block " />
+        SleekClean</h1>
       <NavigationMenu viewport={isMobile}>
         <NavigationMenuList className="flex-wrap">
           <Link href="/" className={navigationMenuTriggerStyle()}>
