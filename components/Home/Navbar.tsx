@@ -476,7 +476,9 @@ export function HomepageNavigationMenu() {
           <Button variant={"outline"} className="rounded-full">
             Sign Up
           </Button>
+          <Link href="/auth/login">
           <Button className="rounded-full">Login</Button>
+          </Link>
         </div>
       )}
     </div>

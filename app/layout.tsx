@@ -6,6 +6,7 @@ import { Toaster } from "sonner";
 
 const firaSans = Fira_Sans({weight: ["400", "700"], subsets: ["latin"], variable: "--font-fira-sans"});
 const inter = Inter({subsets: ["latin", "greek"], variable: "--font-inter"});
+const openSans = Inter({subsets: ["latin"]});
 
 export const metadata: Metadata = {
   title: "CleanTech",
@@ -20,9 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased`}
+        className={`${openSans.className} antialiased`}
       >
-             <Toaster richColors position="top-right" closeButton />
+           <Toaster richColors position="top-right" closeButton />
            <QueryProvider>{children}</QueryProvider>
       </body>
     </html>

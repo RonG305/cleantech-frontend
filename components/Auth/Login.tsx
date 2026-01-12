@@ -86,7 +86,8 @@ export function Login() {
         mutate(data)
     }
   return (
-    <div className={styles.authContainer}>
+    // glassmorphism background container
+    <div className={styles.authContainer + ""}>
       <Card className="w-full max-w-lg mx-4">
         <CardHeader className="flex items-center flex-col justify-center">
           <CardTitle className="font-semibold text-2xl md:text-3xl">Login to your account</CardTitle>
