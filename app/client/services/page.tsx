@@ -1,4 +1,4 @@
-import Categories from '@/components/Client/Services/Categories'
+import Categories from '@/components/Client/Categories/Categories'
 import React from 'react'
 
 const page = () => {

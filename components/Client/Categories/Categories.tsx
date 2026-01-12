@@ -1,7 +1,6 @@
 import React from "react";
 import { getServiceCategories } from "./actions";
 import CategoriesCard from "./CategoriesCard";
-import { ServiceCategory } from "./types";
 
 import {
   Carousel,
@@ -11,6 +10,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Input } from "@/components/ui/input";
+import { ServiceCategory } from "./types";
 
 const Categories = async () => {
   const results = await getServiceCategories();
