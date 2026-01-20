@@ -3,12 +3,21 @@ export const providerSidebarItems = [
     title: "Overview",
     url: "/provider/dashboard",
     icon: "solar:widget-5-linear",
+    allowedRoles: ["ADMIN", "PROVIDER"],
   },
+  
+   {
+    title: "Catalog",
+    icon: "solar:box-archive-linear",
+    url: "/provider/dashboard/catalog",
+    allowedRoles: ["ADMIN", "PROVIDER"],
+   },
 
   {
     title: "Jobs",
     icon: "solar:clipboard-list-linear",
     url: "/provider/dashboard/jobs",
+    allowedRoles: ["ADMIN", "PROVIDER"],
   },
 
   {

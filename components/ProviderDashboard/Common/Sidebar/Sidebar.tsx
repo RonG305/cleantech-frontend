@@ -18,7 +18,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { providerSidebarItems } from "./sidebarItems";
 import { Icon } from "@iconify/react";
-const RENTAL_LOGO = '/logos/rental_logo.jpg';
+const CLEANTECH = '/logos/clean-tech.jpg';
 
 export function ProviderSidebar() {
   const [loading, setLoading] = useState(false);
@@ -30,17 +30,16 @@ export function ProviderSidebar() {
     <Sidebar className="thin-scrollbar" collapsible="icon">
       <SidebarContent className=" thin-scrollbar">
         <SidebarGroup>
-          {/* <SidebarGroupLabel> */}
           <div className="flex items-center gap-x-4">
             <Image
-              src={RENTAL_LOGO}
+              src={CLEANTECH}
               alt="CleanTech logo"
               width={60}
               height={60}
               className="rounded-full "
             />
             <div className="text-sm">
-              <h2 className="font-bold text-lg">CleanTech</h2>
+              <h2 className="font-extrabold text-2xl">Clean<span className=" italic text-primary">Tech</span></h2>
               <p className="text-xs">
                 Welcome, {loggedInUser ? loggedInUser.name : "Guest"}
               </p>
